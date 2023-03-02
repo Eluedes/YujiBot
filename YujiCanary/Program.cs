@@ -20,7 +20,7 @@ namespace YujiCanary
         {
             var discord = new DiscordClient(new DiscordConfiguration()
             {
-                Token = "MTA2NTYzMjg1OTYwMTI1NjUxOQ.GJOUiA.aC-iM_qJQlbrkCkC3MWEzqICTnK6bZKFpHiVHc",
+                Token = "TOUR_TOKEN",
                 TokenType = TokenType.Bot,
                 Intents = DiscordIntents.AllUnprivileged | DiscordIntents.MessageContents,
                 ReconnectIndefinitely = true,
