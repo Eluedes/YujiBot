@@ -1,0 +1,6 @@
+private static Task Client_Ready(ReadyEventArgs e)
+        {
+            e.Client.DebugLogger.LogMessage(LogLevel.Info, "YujiCanay", "Cliente pronto", DateTime.Now);
+            _client.UpdateStatusAsync(new DSharpPlus.Entities.DiscordActivity("teste", DSharpPlus.Entities.ActivityType.Playing), DSharpPlus.Entities.UserStatus.DoNotDisturb);
+            return Task.CompletedTask;
+        }
